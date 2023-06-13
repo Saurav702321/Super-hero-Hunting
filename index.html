@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperHero Hunter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- adding css -->
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <!-- Adding crypto.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js" 
+    integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div class="container">
+        <a class="favourite-heroes" href="./favHeroes.html">
+            <h2 class="blink" style="color: blue;">
+                   My Favourite Characteristics
+            </h2>
+        </a>
+        <p id="main-heading">
+            <img class="all" src="./image/cosmic-avengers.jpg" alt=""> 
+            <marquee width="85%" direction="right">    
+                <span>SuperHero Hunter</span>
+            </marquee>
+        </p>
+    </div>
+
+    <div id="data-container">
+        <div id="search-bar">
+            <input type="search" name="searchHero" id="searchHero" placeholder="Search here (min.3 characters)">
+        </div>
+        <div id="result-container">
+            <ul id="searchResults">
+                
+                <li id="list-item"> 
+                    <div id="first">
+                        <img src="./image/all.jpg">
+                        <a class="character-info" href="./heroDetails.html" id="">
+                            <span>Saurav Kumar Yadav</span>
+                        </a>
+                    </div>
+                    <div id="second">
+                        <button class="btn" id="0">
+                            Add to Favourite
+                       </button>
+                    </div>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <!-- index script file -->
+    <script type="text/javascript" src="./js/script.js"></script>
+</body>
+</html>

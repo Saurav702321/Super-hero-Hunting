@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">Hero Details</title>
+    <!-- For Adding Social with FontAwesome -->
+	<script src="https://kit.fontawesome.com/06d56123a4.js" crossorigin="anonymous"></script>
+     
+     <!-- adding css file -->
+    <link type="text/css" rel="stylesheet" href="./css/heroDetails.css">
+</head>
+<body background="./image/all.jpg">
+
+     <div class="nav">
+          <button class="nav-btn" onclick="window.location.href='./index.html'">
+               Home
+          </button> 
+          <button class="nav-btn" onclick="window.location.href='./favHeroes.html'">
+               Favourites
+        </button>
+     </div>
+
+     <main id="main">
+          <div id="left">
+               <img id="avater" src="./image/super-hero-squad.jpg"/>
+          </div>
+          <div id="right">
+               <div id="hero-title">
+                    Saurav Kumar Yadav
+               </div>
+               <div id="about">
+                    <div id="biography">
+                         <span class="cate">Biography</span>
+                         <ul id="about-bio">
+                           <li id="comics">Comics: 0</li>
+                           <li id="discription">Discription: none</li>
+                           <li id="series">Series: 0</li>
+                           <li id="stories">Stories: 0</li>
+                           <li id="detail">Saurabh Details: 
+                              <button id="detail-btn" onclick="window.location.href='https://google.com';">Details</button>
+                           </li>
+                           <li id="comiclink">Comic Link: 
+                              <button id="comiclink-btn" onclick="window.location.href='https://google.com';">Comics</button>
+                           </li>
+                         </ul>
+                    </div>
+             
+               </div>
+          </div>
+     </main>
+
+
+    <script type="text/javascript" src="./js/heroDetails.js"></script>
+</body>
+</html>

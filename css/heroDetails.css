@@ -1,0 +1,193 @@
+body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.nav {
+    height: 70px;
+    width: 95vw;
+    background: black;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+.nav-btn {
+    background: #f2711c;
+    height: 43px;
+    color: #fff;
+    border: none;
+    font-size: 1.3rem;
+    margin-left: 10px;
+    margin-right: 20px;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    position: relative;
+    top: -1px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+  }
+
+
+#detail-container:hover{
+    background-color: rgb(251, 220, 125);
+    box-shadow: 0 0 5px 2px rgb(102, 102, 251);
+}
+
+main{
+    position: relative;
+    display: flex;
+    top: 10%;
+    left: 13%;
+    height: 70vh;
+    width: 80vw;
+    border: 2px solid black;
+}
+
+#left{
+    height: 100%;
+    width: 40%;
+}
+
+#right{
+    height: 99%;
+    width: 60%;
+    border: 2px solid black;
+    color:whitesmoke;
+    background-color: rgb(174, 174, 174);
+}
+
+#avater{
+    height: 100%;
+    width: 100%;
+}
+
+#hero-title{
+    height: 20%;
+    width: 100%;
+    border-bottom: 1px solid #000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 2.25rem;
+    font-weight: 750;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    background-color: #f2711c;
+}
+
+#about {
+    display: flex;
+    height: 80%;
+    width: 100%;
+}
+
+.cate {
+    font-size: 1.7rem;
+    font-weight: 500;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    background-color: black;
+    color: white;
+    padding: 5px;
+  }
+
+#biography {
+  width: 80%;
+  height: 95%;
+  margin-top: 10px;
+  text-align: start;
+  background: transparent;
+}
+#biography span{
+    margin-left: 45%;
+}
+
+li {
+    margin-bottom: 15px;
+    font-size: 1.25rem;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+
+#detail-btn,
+#comiclink-btn{
+    height: 23px;
+    width: 70px;
+    font-size: 1rem;
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+    #main{
+        left: 2.5vw;
+        width: 95vw;
+    }
+    #left{
+        width: 50%;
+        background-color: rgb(188, 145, 36);
+    }
+    #right{
+        width: 50%;
+    }
+    #avater{
+        margin-top: 10%;
+        height: 80%;
+    }
+    #hero-title{
+        font-size: 2rem;
+    }
+    #biography span{
+        margin-left: 30%;
+    }
+    li{
+        font-size: 1.15rem;
+        margin-bottom: 12px;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    #main{
+        left: 1px;
+        width: 98vw;
+    }
+    #left{
+        width: 50%;
+        background-color: rgb(188, 145, 36);
+    }
+    #right{
+        width: 50%;
+    }
+    #avater{
+        margin-top: 20%;
+        height: 70%;
+    }
+    #hero-title{
+        font-size: 2rem;
+    }
+    .cate{
+        font-size: 1.25rem;
+        padding: auto;
+    }
+    #biography span{
+        margin-left: 20%;
+    }
+    li{
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+    }
+    #detail-btn,
+    #comiclink-btn{
+        height: 18px;
+        width: 70px;
+        font-size: 0.8rem;
+    }
+}
